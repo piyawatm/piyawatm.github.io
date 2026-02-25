@@ -1,5 +1,5 @@
-// Simple script for the minimal website
-console.log('Welcome to Ken\'s minimal personal website!');
+// Simple script for the website
+console.log('Welcome to Ken\'s personal website!');
 
 // Add smooth scrolling behavior (if needed in future)
 document.addEventListener('DOMContentLoaded', function() {

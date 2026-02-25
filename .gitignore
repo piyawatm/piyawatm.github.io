@@ -45,9 +45,10 @@ yarn-error.log*
 .cache/
 .parcel-cache/
 
-# Build outputs (if using build tools)
+# Build outputs
 dist/
 build/
+_site/
 
 # Testing
 coverage/
