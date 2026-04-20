@@ -128,88 +128,41 @@ h1 {
 }
 
 .social-links {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 0.5rem;
-    padding: 0.75rem 1.25rem;
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #495057;
+    text-align: left;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.social-links li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.social-links li:last-child {
+    border-bottom: none;
+}
+
+.link-label {
+    font-size: 0.8rem;
     font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    min-width: 5rem;
 }
 
-.social-links a:hover {
-    background: #e9ecef;
-    border-color: #dee2e6;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.social-links a i {
-    font-size: 1.1rem;
-    width: 16px;
-    text-align: center;
-}
-
-/* GitHub link styling */
-.social-links a[href*="github"] {
-    background: #f6f8fa;
-    border-color: #d0d7de;
-    color: #24292f;
-}
-
-.social-links a[href*="github"]:hover {
-    background: #eaeef2;
-    border-color: #c7cdd4;
-}
-
-/* LinkedIn link styling */
-.social-links a[href*="linkedin"] {
-    background: #f3f6ff;
-    border-color: #d4e3ff;
-    color: #0a66c2;
-}
-
-.social-links a[href*="linkedin"]:hover {
-    background: #e8f0ff;
-    border-color: #c2d7ff;
-}
-
-/* Email link styling */
-.social-links a[href*="mailto"] {
-    background: #fff5f5;
-    border-color: #fed7d7;
-    color: #c53030;
-}
-
-.social-links a[href*="mailto"]:hover {
-    background: #ffeaea;
-    border-color: #fbb6b6;
-}
-
-/* Project links styling */
-.social-links a[href*="debatabase-th"],
-.social-links a[href*="vaewvakyvadi"] {
-    background: #f0fff4;
-    border-color: #c6f6d5;
-    color: #2d7d32;
-}
-
-.social-links a[href*="debatabase-th"]:hover,
-.social-links a[href*="vaewvakyvadi"]:hover {
-    background: #e6ffed;
-    border-color: #9ae6b4;
+.link-value {
+    font-size: 0.95rem;
+    color: #555;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, monospace;
+    word-break: break-all;
 }
 
 /* Responsive Design */
@@ -236,15 +189,10 @@ h1 {
         font-size: 0.9rem;
     }
 
-    .social-links {
+    .social-links li {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .social-links a {
-        width: 100%;
-        max-width: 280px;
-        justify-content: center;
+        align-items: flex-start;
+        gap: 0.15rem;
     }
 }
 
@@ -252,21 +200,14 @@ h1 {
     h1 {
         font-size: 1.75rem;
     }
-    
+
     .bio p {
         font-size: 0.95rem;
     }
-    
-    .social-links a {
-        padding: 0.875rem 1rem;
-        font-size: 0.85rem;
-    }
-}
 
-/* Focus states for accessibility */
-.social-links a:focus {
-    outline: 2px solid #4285f4;
-    outline-offset: 2px;
+    .link-value {
+        font-size: 0.9rem;
+    }
 }
 
 /* Print styles */
@@ -276,31 +217,6 @@ h1 {
         color: black;
         font-size: 12pt;
         line-height: 1.4;
-    }
-    
-    .social-links a {
-        border: 1px solid #ccc;
-        background: white;
-        color: black;
-    }
-    
-    .social-links a::after {
-        content: " (" attr(href) ")";
-        font-size: 0.8em;
-        color: #666;
-    }
-}
-
-/* Smooth animations */
-@media (prefers-reduced-motion: no-preference) {
-    .social-links a {
-        transition: all 0.2s ease;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .social-links a {
-        transition: none;
     }
 }
 
