@@ -1,59 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ken Mahattanadul</title>
-    <meta name="description" content="Personal website of Ken Mahattanadul">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <nav class="top-nav">
-        <a href="writings">Writings</a>
-        <a href="#publications">Publications</a>
-        <a href="#media">Media</a>
-    </nav>
-    <main class="container">
-        <div class="content">
-            <header>
-                <h1>Ken Mahattanadul</h1>
-                <p class="subtitle"></p>
-            </header>
-            
-            <section class="bio">
-                <p>
-                    Hello! I'm Ken, a CS master's student at Brown's <a href="https://atlas.cs.brown.edu/#" target="_blank" rel="noopener noreferrer">Atlas</a> and <a href="https://database.cs.brown.edu/" target="_blank" rel="noopener noreferrer">Database group</a> doing research on systems, databases, and AI with <a href="https://nikos.vasilak.is/" target="_blank" rel="noopener noreferrer">Prof. Nikos Vasilakis</a> and <a href="https://cs.brown.edu/people/ugur/" target="_blank" rel="noopener noreferrer">Prof. Ugur Cetintemel</a>.
-                    I did my undergrad at UMich where I worked on <a href="https://drive.google.com/file/d/13IanFsd-bfKBMyZflccUmWLMFF54Cckg/view?usp=sharing" target="_blank" rel="noopener noreferrer">a year-long big data project</a> with <a href="https://www.up.com/" target="_blank" rel="noopener noreferrer">Union Pacific Railroad</a> advised by <a href="https://web.eecs.umich.edu/~warthur/" target="_blank" rel="noopener noreferrer">Prof. William Arthur</a> under the <a href="https://mdp.engin.umich.edu/sponsor_teams/union-pacific-22/" target="_blank" rel="noopener noreferrer">MDP program</a>, where I then went on to work full time.
-                </p>
-                <p>
-                    Outside of work and school, I'm always available for a tennis match or a quick band jam session. 
-                    I'm also broadly interested in general socio-economic-political issues, and <a href="https://vaewvakyvadi.com" target="_blank" rel="noopener noreferrer">in my previous life</a> I was heavily involved in <a href="https://debatabase-th.vercel.app/" target="_blank" rel="noopener noreferrer">Thailand's debate community</a>.
-                </p>
-                <p>
-                    I look forward to meeting you :)
-                </p>
-            </section>
-            
-            <section class="links">
-                <h2>Links</h2>
-                <ul class="social-links">
-                    <li>
-                        <span class="link-label">GitHub</span>
-                        <span class="link-value">piyawatm</span>
-                    </li>
-                    <li>
-                        <span class="link-label">LinkedIn</span>
-                        <span class="link-value">piyawatchara-ken-mahattanadul</span>
-                    </li>
-                    <li>
-                        <span class="link-label">Email</span>
-                        <span class="link-value">piyawatchara _ mahattanadul [at] brown.edu</span>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </main>
-</body>
-</html>
+---
+layout: base.njk
+---
+<header>
+    <h1>Ken Mahattanadul</h1>
+</header>
+
+<section class="intro">
+    <div class="photo-column">
+        <img class="profile-photo" src="/images/profile.jpg" alt="Ken Mahattanadul">
+        <a class="cv-link" href="https://drive.google.com/file/d/1bL4hKkEerNLxdPxGO_UhI1AGIvOmYBq_/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+    </div>
+    <div class="bio">
+        <p>
+            Hello! I'm Ken, a CS master's student at Brown's <a href="https://atlas.cs.brown.edu/#" target="_blank" rel="noopener noreferrer">Atlas</a> and <a href="https://database.cs.brown.edu/" target="_blank" rel="noopener noreferrer">Database group</a> doing research on systems, databases, and AI with <a href="https://nikos.vasilak.is/" target="_blank" rel="noopener noreferrer">Prof. Nikos Vasilakis</a> and <a href="https://cs.brown.edu/people/ugur/" target="_blank" rel="noopener noreferrer">Prof. Ugur Cetintemel</a>.
+            I did my undergrad at UMich where I worked on <a href="https://drive.google.com/file/d/13IanFsd-bfKBMyZflccUmWLMFF54Cckg/view?usp=sharing" target="_blank" rel="noopener noreferrer">a year-long big data project</a> with <a href="https://www.up.com/" target="_blank" rel="noopener noreferrer">Union Pacific Railroad</a> advised by <a href="https://web.eecs.umich.edu/~warthur/" target="_blank" rel="noopener noreferrer">Prof. William Arthur</a> under the <a href="https://mdp.engin.umich.edu/sponsor_teams/union-pacific-22/" target="_blank" rel="noopener noreferrer">MDP program</a>, where I then went on to work full time.
+        </p>
+        <p>
+            Outside of work and school, I'm always available for a <a href="https://www.usta.com/en/home/play/player-search/profile.html#uaid=2020371943&tab=about" target="_blank" rel="noopener noreferrer">tennis match</a> or a quick band jam session. 
+            I'm also broadly interested in general socio-economic-political issues, and <a href="https://vaewvakyvadi.com" target="_blank" rel="noopener noreferrer">in my previous life</a> I was heavily involved in <a href="https://debatabase-th.vercel.app/" target="_blank" rel="noopener noreferrer">Thailand's debate community</a>.
+        </p>
+        <p>
+            I look forward to meeting you :)
+        </p>
+    </div>
+</section>
+
+<section class="news">
+    <h2>News</h2>
+    <ul class="news-list">
+        <li>
+            <span class="news-date">Sep 2025</span>
+            <span class="news-text">Made it to Brown!</span>
+        </li>
+        <li>
+            <span class="news-date">Jun 2025</span>
+            <span class="news-text">Gave a talk on the intro to CNNs and U-Net for image processing and fintech at Chulalongkorn's engineering undergraduate research seminar.</span>
+        </li>
+        <li>
+            <span class="news-date">May 2025</span>
+            <span class="news-text">Left Union Pacific to take a break before starting my CS master's at Brown.</span>
+        </li>
+        <li>
+            <span class="news-date">Jul 2023</span>
+            <span class="news-text">Returned to Union Pacific as a full-time software engineer on the fintech team..</span>
+        </li>
+        <li>
+            <span class="news-date">May 2023</span>
+            <span class="news-text">Graduated from UMich with a B.S.E. in Computer Science.</span>
+        </li>
+        <li>
+            <span class="news-date">Jan 2023</span>
+            <span class="news-text">Continued working part-time on Union Pacific's fintech team.</span>
+        </li>
+        <li>
+            <span class="news-date">Jan 2022</span>
+            <span class="news-text">Joined year-long industry research project with Union Pacific through UMich's MDP.</span>
+        </li>
+        <li>
+            <span class="news-date">May 2021</span>
+            <span class="news-text">Started my software engineering summer internship at Agoda.</span>
+        </li>
+        <li>
+            <span class="news-date">Sep 2019</span>
+            <span class="news-text">Kicked off my CS undergrad at UMich with EECS183.</span>
+        </li>
+    </ul>
+</section>
+
+<section class="links">
+    <h2>Links</h2>
+    <ul class="social-links">
+        <li>
+            <span class="link-label">GitHub</span>
+            <span class="link-value">piyawatm</span>
+        </li>
+        <li>
+            <span class="link-label">LinkedIn</span>
+            <span class="link-value">piyawatchara-ken-mahattanadul</span>
+        </li>
+        <li>
+            <span class="link-label">Email</span>
+            <span class="link-value">piyawatchara _ mahattanadul [at] brown.edu</span>
+        </li>
+        <li>
+            <span class="link-label">X</span>
+            <span class="link-value">[at] KenMahattanadul</span>
+        </li>
+    </ul>
+</section>
